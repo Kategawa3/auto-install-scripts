@@ -111,13 +111,13 @@ _detect_arch ()
     if [[ "$architecture" == x86_64* ]]; then
         cpuarch="amd64"
     elif [[ "$architecture" == i*86 ]]; then
-        cpuarch="386"
+        cpuarch="i386"
     elif  [[ "$architecture" == aarch64 ]]; then
-        cpuarch="arm64"
+        cpuarch="amd64"
     elif  [[ "$architecture" == arm64 ]]; then
-        cpuarch="arm64"
+        cpuarch="amd64"
     elif  [[ "$architecture" == arm ]]; then
-        cpuarch="arm"
+        cpuarch="amd64"
     fi
 
     if [[ -z "$cpuarch" ]]; then
